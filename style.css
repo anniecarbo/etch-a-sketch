@@ -28,20 +28,7 @@ body {
     width: 10px;
     height: 10px;
     margin: 1px;
-    transition: all 0s ease 90s; /
-}
-
-.square:hover {
-    background-color: black;
-    transition-delay: 0s;
-    visibility: visible;
-}
-
-
-.square-black {
-    background-color: black;
-    width: 10px;
-    height: 10px;
-    margin: 1px;
 
 }
+
+

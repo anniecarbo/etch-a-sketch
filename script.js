@@ -1,9 +1,9 @@
-// Grille de 16x16
+// Grid 16x16
 
-let square = document.createElement("div");
-square.classList.add("square");
+let cell = document.createElement("div");
+cell.classList.add("square");
 
-let divClone = square.cloneNode(true);
+let divClone = cell.cloneNode(true);
 
 function appendNCopies(n, original, appendTo) {
     for(var i = 0; i < n; i++) {
@@ -12,5 +12,16 @@ function appendNCopies(n, original, appendTo) {
     }
 }
 
-appendNCopies(256, square, document.getElementById("grid"));
+appendNCopies(256, cell, document.getElementById("grid"));
+
+// Black hover 
+
+let elem = document.getElementsByClassName('square');
+let elemArray = [...elem];
+
+elemArray.forEach((item) => {
+    item.addEventListener("mouseover", function() {
+        item.style.background = "black";
+    })
+})
 
