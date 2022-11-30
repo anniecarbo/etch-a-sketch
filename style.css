@@ -1,0 +1,47 @@
+.title {
+    text-align: center;
+}
+
+.title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: rgb(229, 229, 231);;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 12px 12px 12px 12px 12px 12px 12px 12px 12px 12px 12px 12px 12px 12px 12px 12px;
+    gap: 1px;
+/*grid repeat*/
+}
+
+.square {
+    background: rgb(187, 170, 170);
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    transition: all 0s ease 90s; /
+}
+
+.square:hover {
+    background-color: black;
+    transition-delay: 0s;
+    visibility: visible;
+}
+
+
+.square-black {
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+
+}
