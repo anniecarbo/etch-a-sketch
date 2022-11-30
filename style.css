@@ -10,6 +10,10 @@ body {
     background-color: rgb(229, 229, 231);;
 }
 
+button {
+    margin: 15px;
+}
+
 .grid-container {
     display: flex;
     justify-content: center;

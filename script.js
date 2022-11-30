@@ -14,8 +14,8 @@ function appendNCopies(n, original, appendTo) {
 
 appendNCopies(256, cell, document.getElementById("grid"));
 
-// Black hover 
 
+// Black hover 
 let elem = document.getElementsByClassName('square');
 let elemArray = [...elem];
 
@@ -25,3 +25,8 @@ elemArray.forEach((item) => {
     })
 })
 
+
+//Ici la fenetre pour que le joueur choissise la taille de la grille
+function popup() {
+let playerPrompt = prompt("Enter number of squares per side");
+}
