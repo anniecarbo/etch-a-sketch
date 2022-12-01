@@ -14,6 +14,11 @@ button {
     margin: 15px;
 }
 
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+
 .grid-container {
     display: flex;
     justify-content: center;
@@ -21,17 +26,17 @@ button {
 }
 
 #grid {
+    width: 800px;
+    height: 800px;
     display: grid;
-    grid-template-columns: 12px 12px 12px 12px 12px 12px 12px 12px 12px 12px 12px 12px 12px 12px 12px 12px;
-    gap: 1px;
+    grid-gap: 1px;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
 /*grid repeat*/
 }
 
 .square {
     background: rgb(187, 170, 170);
-    width: 10px;
-    height: 10px;
-    margin: 1px;
 
 }
 
