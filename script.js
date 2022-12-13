@@ -8,7 +8,7 @@ function popup() {
     SquaresArray.forEach((square) => {
         container.removeChild(square);
     })
-    resquestedSize = prompt("Enter number of squares per side");
+    resquestedSize = Math.min(prompt("Enter number of squares per side under 100"),100);
     makeAGrid(resquestedSize);
     }
     
